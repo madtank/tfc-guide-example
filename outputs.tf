@@ -1,8 +1,4 @@
-output "instance_ami" {
-  value = aws_instance.ubuntu.ami
+# Output variable: DNS Name of ELB
+output "elb_dns_name" {
+  value = "${aws_elb.example.dns_name}"
 }
-
-output "instance_arn" {
-  value = aws_instance.ubuntu.arn
-}
-
